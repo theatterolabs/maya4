@@ -507,7 +507,7 @@ function sendOTP() {
 	window.phoneValuecheck = document.getElementById("tele").value;
 	
 	if ( window.phoneValuecheck == null || window.phoneValuecheck == "" ) {
-		window.phoneValue = 0000000000;} else {
+		window.phoneValue = "0000000000";} else {
 			window.phoneValue = document.getElementById("tele").value; }
 		
 
@@ -570,7 +570,7 @@ $(function() {
 		window.phoneValuecheck = document.getElementById("tele").value;
 	
 		if ( window.phoneValuecheck == null || window.phoneValuecheck == "" ) {
-		window.phoneValue = 0000000000;} else {
+		window.phoneValue = "0000000000";} else {
 			window.phoneValue = document.getElementById("tele").value; }
 		
 		fetch(url, {
@@ -594,8 +594,8 @@ $(function() {
 		document.getElementById('signup').style.display = 'block';
 		document.getElementById('plschk').style.display = 'none';
 		mixpanel.track('Entered Leaderboard');	
-    		updateLeaderboard()
 		alert('Your Score Was Posted');
+		updateLeaderboard()
 	});
 });
 
