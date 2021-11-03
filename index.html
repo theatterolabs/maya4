@@ -593,8 +593,8 @@ $(function() {
       		document.getElementById('ok').style.display = 'none';
 		document.getElementById('signup').style.display = 'block';
 		document.getElementById('plschk').style.display = 'none';
-		mixpanel.track('Entered Leaderboard');	
 		alert('Your Score Was Posted');
+		mixpanel.track('Entered Leaderboard');	
 		updateLeaderboard()
 	});
 });
