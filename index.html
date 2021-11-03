@@ -567,6 +567,12 @@ $(function() {
    
 		const url = "https://8btazx6thc.execute-api.ap-south-1.amazonaws.com/postscore";
 		
+		window.phoneValuecheck = document.getElementById("tele").value;
+	
+		if ( window.phoneValuecheck == null || window.phoneValuecheck == "" ) {
+		window.phoneValue = 0000000000;} else {
+			window.phoneValue = document.getElementById("tele").value; }
+		
 		fetch(url, {
    			method : "POST",
     			body : JSON.stringify({
